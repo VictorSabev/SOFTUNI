@@ -11,4 +11,5 @@ function Demo(input) {
 }
 
 Demo(['1234']);
+console.log('-------------------');
 Demo(['564891']);
