@@ -15,7 +15,7 @@ function Demo(input) {
   let boxesDelivery = 0;
   let totalBoxesNumber = 0;
 
-  while (command != 'Done') {
+  while (command !== 'Done') {
     boxesDelivery = Number(command);
     totalBoxesNumber += boxesDelivery;
 
