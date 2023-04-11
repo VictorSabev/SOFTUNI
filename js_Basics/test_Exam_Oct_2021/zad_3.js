@@ -1,0 +1,5 @@
+// Zadacha
+
+function Demo() {}
+
+Demo;
