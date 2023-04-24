@@ -1,6 +1,0 @@
-// Zadacha
-
-function Demo() {}
-
-Demo;
-
