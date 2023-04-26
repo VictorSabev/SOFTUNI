@@ -1,6 +1,6 @@
 // Task 4 - Vacation
 
-function vacationPrice(group, groupType, weekDay) {
+function vacationPrice(people, groupType, weekDay) {
   let roomPrice = 0;
   let discount = 0;
   let specialDiscount = 0;
@@ -43,15 +43,15 @@ function vacationPrice(group, groupType, weekDay) {
     }
   }
 
-  if (groupType === 'Students' && group >= 30) {
+  if (groupType === 'Students' && people >= 30) {
     discount = 0.15;
-  } else if (groupType === 'Business' && group >= 100) {
+  } else if (groupType === 'Business' && people >= 100) {
     specialDiscount = 10;
-  } else if (groupType === 'Regular' && group >= 10 && group <= 20) {
+  } else if (groupType === 'Regular' && people >= 10 && people <= 20) {
     discount = 0.05;
   }
 
-  let subTotal = (group - specialDiscount) * roomPrice;
+  let subTotal = (people - specialDiscount) * roomPrice;
   let totalCost = subTotal - subTotal * discount;
 
   console.log(`Total price: ${totalCost.toFixed(2)}`);

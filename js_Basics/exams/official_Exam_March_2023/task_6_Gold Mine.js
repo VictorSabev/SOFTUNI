@@ -14,7 +14,7 @@ function Demo(input) {
   let diference = 0;
 
   for (let i = 0; i < numberOFLocations; i++) {
-    for (a = 0; a < workingDays; a++) {
+    for (input = 0; input < workingDays; input++) {
       income = Number(input[index]);
       index++;
       incomeCount += income;
