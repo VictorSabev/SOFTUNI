@@ -1,7 +1,7 @@
 // Task 1 - Sum Digits
 
 function sumDigits(num) {
-  let inputData = String(num);
+  let inputData = String(num); // .toString()
   let sum = 0;
   for (let i = 0; i < inputData.length; i++) {
     let result = Number(inputData[i]);

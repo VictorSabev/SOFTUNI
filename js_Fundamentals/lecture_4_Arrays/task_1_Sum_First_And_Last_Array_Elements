@@ -1,0 +1,12 @@
+// Task 1 - Sum First and Last Array Elements
+
+function firstAndLastElementArray(array) {
+  let firstElement = array[0];
+  let lastElement = array[array.length - 1];
+  let sumOfElements = firstElement + lastElement;
+  console.log(sumOfElements);
+}
+
+firstAndLastElementArray([20, 30, 40]);
+firstAndLastElementArray([10, 17, 22, 33]);
+firstAndLastElementArray([11, 58, 69]);

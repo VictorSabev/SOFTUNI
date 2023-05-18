@@ -31,7 +31,7 @@ function MaximusDecimusMeridius(loses, helmPrice, swordPrice, shieldPrice, armou
       if (armourBreak === 2) {
         armourReapirsCount++;
       }
-
+ 
       helmStatus = 1;
       swordStatus = 1;
       if (armourBreak === 2) {

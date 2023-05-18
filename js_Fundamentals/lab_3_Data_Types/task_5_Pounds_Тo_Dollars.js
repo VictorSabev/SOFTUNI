@@ -1,7 +1,9 @@
 // Task 5 - Pounds to Dollars
 
 function currencyConverotr(GBP) {
-  console.log((GBP * 1.31).toFixed(3));
+  const exchangeRate = 1.31;
+  const resultInUSD = GBP * exchangeRate;
+  console.log(resultInUSD.toFixed(3));
 }
 
 currencyConverotr(80);
