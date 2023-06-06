@@ -1,7 +1,7 @@
 // Task 3 - Merge Arrays
 
 function mergingArrays(arr1, arr2) {
-  let arr1Length = arr1.length;
+  let arr1Length = arr1.length; // ostarqla praktika - nqma nujda da se iznasq funkciqta .length v promenliva
   let newArray = [];
 
   for (let i = 0; i < arr1Length; i++) {

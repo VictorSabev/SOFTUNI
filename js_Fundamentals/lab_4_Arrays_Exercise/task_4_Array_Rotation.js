@@ -6,7 +6,7 @@ function arrayRotaion(arry, rotationCount) {
 
   while (counter < rotationCount) {
     counter++;
-    let a = newArray.splice(0, 1);
+    let a = newArray.splice(0, 1);   // alternativno moje d apolzavame .shift() metod 
     newArray.push(a);
   }
 

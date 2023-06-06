@@ -2,14 +2,13 @@
 
 function maxNumber(array) {
   let newArray = [];
-  const arrayLength = array.length;
   let chekcNumber = 0;
   let chekcNumber2 = 0;
 
-  for (let i = 0; i < arrayLength; i++) {
+  for (let i = 0; i < array.length; i++) {
     chekcNumber = array[i];
 
-    for (let a = i + 1; a < arrayLength; a++) {
+    for (let a = i + 1; a < array.length; a++) {
       chekcNumber2 = array[a];
 
       if (chekcNumber <= chekcNumber2) {
@@ -22,7 +21,7 @@ function maxNumber(array) {
     }
   }
 
-  newArray.push(array[arrayLength - 1]);
+  newArray.push(array[array.length - 1]);
   console.log(newArray.join(' '));
 }
 
