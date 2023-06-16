@@ -1,1 +1,0 @@
-// Task 1 - Equal Neighbors
