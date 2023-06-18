@@ -20,6 +20,18 @@ arrayOfNumbers = [1, 2, 4, 5, 6, 7, 8];
 
 // console.log(inventory);
 
-let array = [1, 12, 7, 10];
-array.sort((a, b) => a - b);
-console.log(array);
+// let array = [1, 12, 7, 10];
+// array.sort((a, b) => a - b);
+// console.log(array);
+
+let encryptedMessage = ['z', 'z', 'H', 'e'];
+let firstParameter = 'z';
+let secondParameter = 'l';
+
+encryptedMessage.forEach((x, index) => {
+  if (x === firstParameter) {
+    encryptedMessage[index] = secondParameter;
+  }
+});
+
+console.log(encryptedMessage);
