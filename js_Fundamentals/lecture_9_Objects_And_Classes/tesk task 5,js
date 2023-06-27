@@ -1,0 +1,29 @@
+function cat(array) {
+  class Cat {
+    constructor(catName, catAge) {
+      this.name = catName;
+      this.age = catAge;
+    }
+
+    meow() {
+      console.log(`${this.name}, age ${this.age} says Meow`);
+    }
+  }
+
+  for (let i of array) {
+    let currentCatInfo = i.slice();
+    currentCatInfo = currentCatInfo.split(' ');
+
+    let currentCat = new Cat(currentCatInfo[0], currentCatInfo[1]);
+    currentCat.meow();
+  }
+
+  // for (let i of input) {
+  //   let [name, age] = i.split(' ');
+  //   console.log(name);
+  //   console.log(age);
+  // }
+}
+
+cat(['Mellow 2', 'Tom 5']);
+cat(['Candy 1', 'Poppy 3', 'Nyx 2']);
