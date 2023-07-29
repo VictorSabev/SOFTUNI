@@ -2,7 +2,7 @@
 
 function barcodeCheck(input) {
   const numberOfBarcodes = input.shift();
-  const barcodePattern = /@#+[A-Z]{1}[A-Za-z0-9]{4,}[A-Z]{1}@#+/;
+  const barcodePattern = /@#+[A-Z]{1}[A-Za-z0-9]{4,}[A-Z]{1}@#+/; // NO FLAG FOR THIS REGEX!
   const productPattern = /\d/g;
 
   for (let i = 0; i < numberOfBarcodes; i++) {
@@ -28,7 +28,7 @@ function barcodeCheck(input) {
 }
 
 barcodeCheck(['3', '@#FreshFisH@#', '@###Brea0D@###', '@##Che4s6E@##']);
-// console.log('---------');
+console.log('---------');
 barcodeCheck([
   '6',
   '@###Val1d1teM@###',
