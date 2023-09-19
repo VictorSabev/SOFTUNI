@@ -1,0 +1,68 @@
+body {
+  background: rgb(218, 218, 218);
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
+  padding: 2rem 12rem;
+}
+
+header>p {
+  float: left;
+  color: orange;
+  text-transform: uppercase;
+}
+
+nav {
+  text-align: right;
+}
+
+nav ul {
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0 8px;
+}
+
+nav ul li a {
+  color: orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main section:nth-child(1) {
+  background-image: url(/js_Advanced/HTML_&_CSS_Mini_Course/lecture_2_introduction_To_CSS/Resources/L2_01_Fitness-Site/Requirements-and-Resources/Images/picture.jpg);
+  margin-top: 4rem;
+  background-size: cover;
+  background-position: center;
+  padding: 11rem 35rem;
+}
+
+main section:nth-child(1) h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+main section:nth-child(1) h1 span {
+  color: orange;
+}
+
+main section:nth-child(1) button {
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+.article {
+  background: orange;
+  color: white;
+  width: 30%;
+  display: inline-block;
+  padding: 23px;
+  text-align: center;
+}
