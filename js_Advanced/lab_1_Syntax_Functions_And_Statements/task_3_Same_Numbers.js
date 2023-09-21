@@ -2,19 +2,19 @@
 
 function sameNumber(input) {
   let digitToString = input.toString();
-  let firstDigit = digitToString.slice(0, 1);
+  let firstDigit = digitToString[0];
   let sum = 0;
-  let truePrint = true;
+  let isTrue = true;
 
   for (let i = 1; i < digitToString.length; i++) {
     if (digitToString[i] != firstDigit) {
       console.log(false);
-      truePrint = false;
+      isTrue = false;
       break;
     }
   }
 
-  if (truePrint === true) {
+  if (isTrue === true) {
     console.log(true);
   }
 

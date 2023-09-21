@@ -1,7 +1,7 @@
 // Task 7 - Cooking by Numbers
 
 function cookingNumbers(input, act1, act2, act3, act4, act5) {
-  let result = input;
+  let result = Number(input);
 
   let actArr = [act1, act2, act3, act4, act5];
 

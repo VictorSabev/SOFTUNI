@@ -1,10 +1,10 @@
 // Task 6 - Road Radar
 
 function roadrRadar(speed, area) {
-  const motorwayLimit = 130;
-  const interstateLimit = 90;
-  const cityLimit = 50;
   const residentialAreaLimit = 20;
+  const cityLimit = 50;
+  const interstateLimit = 90;
+  const motorwayLimit = 130;
 
   let currentLimits = 0;
   let status = '';
@@ -12,16 +12,16 @@ function roadrRadar(speed, area) {
 
   switch (area) {
     case 'residential':
-      currentLimits = 20;
+      currentLimits = residentialAreaLimit;
       break;
     case 'city':
-      currentLimits = 50;
+      currentLimits = cityLimit;
       break;
     case 'interstate':
-      currentLimits = 90;
+      currentLimits = interstateLimit;
       break;
     case 'motorway':
-      currentLimits = 130;
+      currentLimits = motorwayLimit;
       break;
   }
 

@@ -1,4 +1,4 @@
-// Task 2 - Greatest Common Divisor – GCD
+ // Task 2 - Greatest Common Divisor – GCD
 
 function commonDivisor(num1, num2) {
   let biggestNumber = Math.max(num1, num2);
