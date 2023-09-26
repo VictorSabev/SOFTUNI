@@ -1,6 +1,6 @@
 // Task 1 - City Record
 
-function cityRecord(name, population, treasury) {
+function cityTaxes(name, population, treasury) {
   let dataBase = {
     // name: name,
     // population: population,
@@ -9,9 +9,9 @@ function cityRecord(name, population, treasury) {
     population,
     treasury,
   };
-  
+
   return dataBase;
 }
 
-cityRecord('Tortuga', 7000, 15000);
-cityRecord('Santo Domingo', 12000, 23500);
+cityTaxes('Tortuga', 7000, 15000);
+cityTaxes('Santo Domingo', 12000, 23500);

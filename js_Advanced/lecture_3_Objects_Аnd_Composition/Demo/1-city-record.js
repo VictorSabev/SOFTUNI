@@ -1,9 +1,9 @@
 function solve(name, population, treasury) {
     // First way
     let record = {
-        name: name,
-        population: population,
-        treasury: treasury,
+        name,
+        population,
+        treasury,
     };
 
     // Second way - dynamic

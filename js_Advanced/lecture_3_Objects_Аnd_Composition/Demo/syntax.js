@@ -22,7 +22,7 @@ cat['fur-color'] = 'yellow';
 cat[propName] = 7;
 
 // Object property access
-console.log(cat.age);
+console.log(cat.age); 
 console.log(cat['fur-color']);
 console.log(cat[propName]);
 
