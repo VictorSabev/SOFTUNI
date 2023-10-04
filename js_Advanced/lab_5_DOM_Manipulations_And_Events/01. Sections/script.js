@@ -10,7 +10,7 @@ function create(words) {
     currentParagraph.style.display = 'none';
 
     currentDivElement.addEventListener('click', () => {
-      currentParagraph.style.display = 'inline';
+      currentParagraph.style.display = 'block ';
     });
 
     resultDiv.appendChild(currentDivElement);
