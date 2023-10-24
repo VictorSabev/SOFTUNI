@@ -13,8 +13,8 @@ function solution() {
 
   const addButton = document.getElementById('add-btn');
 
-  addButton.addEventListener('click', () => {
-    // e.preventDefault();
+  addButton.addEventListener('click', (e) => {
+    e.preventDefault();
 
     let employee = employeeInputeElement.value; // POTENTIAL PROBLEM - VALUE
     let category = categoryInputeElement.value;
@@ -89,8 +89,8 @@ function solution() {
     });
 
     continueButton.addEventListener('click', () => {
-      editButton.remove();
-      continueButton.remove();
+      document.querySelector('.edit-btn').remove();
+      document.querySelector('.continue-btn').remove();
 
       ulPendingElement.innerHTML = ulPreviewElement.innerHTML;
       ulPreviewElement.innerHTML = '';
@@ -102,7 +102,7 @@ function solution() {
       document.querySelector('.problem-content').appendChild(resolvedButton);
 
       resolvedButton.addEventListener('click', () => {
-        resolvedButton.remove();
+        document.querySelector('.resolve-btn').remove();
         ulResolvedElement.innerHTML = ulPendingElement.innerHTML;
         ulPendingElement.innerHTML = '';
 
@@ -113,8 +113,9 @@ function solution() {
         document.querySelector('.problem-content').appendChild(clearButton);
 
         clearButton.addEventListener('click', () => {
-          clearButton.remove();
+          document.querySelector('.clear-btn').remove();
           document.querySelector('.problem-content').remove();
+          addButton.disabled = false;
         });
       });
     });

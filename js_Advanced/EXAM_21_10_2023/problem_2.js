@@ -1,4 +1,4 @@
-// Problem 2 - flight Booking SAystem
+// Problem 2 - flight Booking System
 
 class FlightBookingSystem {
   constructor(agencyName) {
