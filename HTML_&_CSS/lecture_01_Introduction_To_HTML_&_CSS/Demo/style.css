@@ -1,0 +1,39 @@
+body {
+    background: #369;
+    color: white;
+}
+
+p {
+    color: black;
+}
+
+
+ul li {
+    color: red;
+}
+
+a {
+    color: white;
+}
+
+a[href^="https://"] {
+    color: orange;
+}
+
+.box {
+    background: white;
+}
+
+.warning {
+    color: red;
+}
+
+/* id is more specific (header_my-html-title) this is why color green will not apply */
+h1.amazing {
+    color: green;
+}
+
+#header_my-html-title {
+    color: white;
+    font-size: 60px;
+}

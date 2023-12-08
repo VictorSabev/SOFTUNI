@@ -1,46 +1,27 @@
 const url = 'http://localhost:3030/jsonstore/messenger';
 const messages = document.getElementById('messages');
+const submitBtn = document.getElementById('submit');
 
-function attachEvents() {
-  document.getElementById('submit').addEventListener('click', postMessage);
-  document.getElementById('refresh').addEventListener('click', loadAllMessages);
-}
+const inputName = document.getElementById('author');
+const inputMessage = document.getElementById('content');
 
-async function postMessage() {
-  const [author, content] = [
-    document.getElementById('author'),
-    document.getElementById('content'),
-  ];
+submitBtn.addEventListener('click', postMessage);
 
-  if (author.value !== '' || content.value !== '') {
-    await request(url, { author: author.value, content: content.value });
-    author.value = '';
-    content.value = '';
+// async function postMessage() {
+//   let newEntry = {
+//     author: inputName.value,
+//     content: inputMessage.value,
+//   }
+// }
+  async function request(url, option) {
+    if (option) {
+      option = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(option),
+      }
+    }
+    
   }
-}
-
-async function loadAllMessages() {
-  const res = await fetch(url);
-  const data = await res.json();
-
-  messages.value = Object.values(data)
-    .map(({ author, content }) => `${author}: ${content}`)
-    .join('\n');
-}
-
-async function request(url, option) {
-  if (option) {
-    option = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(option),
-    };
-  }
-  const response = await fetch(url, option);
-
-  return response.json();
-}
-
-attachEvents();
