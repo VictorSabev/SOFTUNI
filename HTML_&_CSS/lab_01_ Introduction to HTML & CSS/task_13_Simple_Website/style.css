@@ -1,0 +1,55 @@
+main {
+    margin-left: 20px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #CCCCCC;
+}
+
+article {
+    padding: 15px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0px;
+}
+
+p {
+    font-size: 24px;
+}
+
+header p {
+    font-style: italic;
+    font-size: 18px;
+}
+
+ul {
+    background-color: #444;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+li {
+    size: 24px;
+    line-height: 40px;
+    padding: 20px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #444;
+
+}
+
+footer p {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
