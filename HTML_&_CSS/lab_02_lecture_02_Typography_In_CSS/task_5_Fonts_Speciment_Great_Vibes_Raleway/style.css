@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:wght@400;700&display=swap');
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+h1 {
+    /* font-family: Great Vibes, cursive;
+     */
+    /* font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Serif', serif; */
+    font-family: Great Vibes, cursive ;
+    line-height: 1.2;
+    font-weight: bold;
+}
