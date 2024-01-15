@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px 10%;
+}
+
+nav *{
+    display: inline-block;
+}
+
+nav {
+    border-bottom: solid 2px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 1.6em;
+    color: rgb(52, 228, 52);
+}
+
+nav ul {
+    margin-left: 10px;
+}

@@ -1,0 +1,29 @@
+body {
+    max-width: 100%;
+    /* height: 400px; */
+}
+
+section img {
+    display: block;
+    margin: auto;
+    max-width: 300px;
+    
+}
+
+
+.viewport {
+    display: block;
+
+}
+
+.viewport:nth-child(1) {
+    background: linear-gradient(to right, blue, magenta);
+    padding: 8em;
+
+}
+
+.viewport:nth-child(2) {
+    background: linear-gradient(to right, green, yellow);
+    padding: 4em;
+
+}
