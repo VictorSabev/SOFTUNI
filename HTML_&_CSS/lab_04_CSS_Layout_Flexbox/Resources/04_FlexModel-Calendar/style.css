@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+    font: 16px/1.5 Verdana;
+}
+
+body {
+    padding: 2em;
+}
+
+.container {
+    display: flex;
+    max-width: 65vw;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+span {
+    border: 1px solid black;
+    /* short hand */
+    /* border-width: 1px;
+    border-color: black;
+    border-style: solid; */
+    padding: 1em;
+    padding-bottom: 3em;
+    text-align: center;
+    flex-grow: 1;
+}
+
+section.notes {
+    flex-direction: column;
+}
+
+section.week span:nth-child(1),
+section.week span:nth-child(7) {
+    flex-basis: 100%;
+}
